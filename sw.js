@@ -1,6 +1,6 @@
 
 console.log('Script loaded!')
-var cacheStorageKey = 'todo-pwa-1'
+var cacheStorageKey = 'todo-pwa-2'
 
 var cacheList = [
   '/',

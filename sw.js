@@ -42,7 +42,7 @@ self.addEventListener('activate', function (e) {
 })
 
 self.addEventListener('fetch', function (e) {
-  // console.log('Fetch event:', e.request.url)
+  console.log('Fetch event:', e.request.url)
   e.respondWith(
     caches.match(e.request).then(function (response) {
       if (response != null) {

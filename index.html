@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<link rel="canonical" href="https://{guthub_username}.github.io/{repository}/" />
 
 <link rel="manifest" href="manifest.json" />
 <link rel="stylesheet" type="text/css" href="main.css">
@@ -28,7 +29,7 @@
 
 <script type="text/javascript">
   if (navigator.serviceWorker != null) {
-    navigator.serviceWorker.register('sw.js')
+    navigator.serviceWorker.register('/pwa-toDoApp/sw.js', {scope:'/pwa-toDoApp/'})
     .then(function(registration) {
       console.log('Registered events at scope: ', registration.scope);
     });

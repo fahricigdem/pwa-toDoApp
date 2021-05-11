@@ -1,6 +1,6 @@
 {
-  "name": "Minimal PWA",
-  "short_name": "PWA Demo",
+  "name": "PWA ToDO App",
+  "short_name": "ToDO",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#313131",

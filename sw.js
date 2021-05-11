@@ -4,7 +4,7 @@ var cacheStorageKey = 'todo-pwa-2'
 
 var cacheList = [
   '/',
-  "index.html",
+  "index.php",
   "style.css",
   "script.js",
   "e.png",

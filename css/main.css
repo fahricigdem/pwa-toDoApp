@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #fff;
+  display: flex;
+  padding: 0.5rem;
+	padding-bottom: calc(env(safe-area-inset-bottom, 0) + 0.5rem);
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+footer input {
+  outline: none;
+  background-color: white;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 100px;
+  margin: 0;
+  font-size: 16px;
+  border: 1px solid black;
+  padding: 0 3rem 0 1rem;
+  flex: 1;
+  height: 3rem;
+}
+
+.add-button {
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 3rem;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+  margin-left: -3rem;
+  border-radius: 100%;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+.add-button::before {
+  content: '＋';
+  font-size: 1.5rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+  flex: 1;
+}
+
+ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:last-child {
+  border-bottom: none;
+}
+
+ul li.checked {
+  background: rgb(245, 245, 245);
+}
+
+ul li .value {
+  flex: 1;
+}
+
+ul li.checked .value {
+  color: rgb(163, 163, 163);
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+  color: black;
+  margin: -0.3em 1rem 0 0.5rem;
+}
+
+.close {
+  color: black;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  margin-right: -0.5rem;
+}
+
+.close::before {
+  content: '×';
+}

@@ -1,14 +1,13 @@
 
 console.log('Script loaded!')
-var cacheStorageKey = 'todo-pwa-2'
+var cacheStorageKey = 'minimal-pwa-3'
 
 var cacheList = [
   '/',
-  "index.http",
-  "style.css",
-  "script.js",
-  "e.png",
-  "pwa-fonts.png"
+  "index.html",
+  "css/main.css",
+  "js/main.js",
+  "icon.png",
 ]
 
 self.addEventListener('install', function (e) {
@@ -43,7 +42,7 @@ self.addEventListener('activate', function (e) {
 })
 
 self.addEventListener('fetch', function (e) {
-  console.log('Fetch event:', e.request.url)
+  // console.log('Fetch event:', e.request.url)
   e.respondWith(
     caches.match(e.request).then(function (response) {
       if (response != null) {

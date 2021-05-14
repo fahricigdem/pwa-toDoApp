@@ -29,7 +29,14 @@
         });
       }
     </script> -->
-
+    <script type="text/javascript">
+      if (navigator.serviceWorker != null) {
+        navigator.serviceWorker.register('sw.js')
+        .then(function(registration) {
+          console.log('Registered events at scope: ', registration.scope);
+        });
+      }
+    </script>
     <script src="js/main.js"></script>
     <script src="js/prevent-zoom.js"></script>
   </body>

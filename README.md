@@ -5,7 +5,7 @@ PWA
 > Very simple code to practice Progressive Web Apps.
 
 ### Usage
-This app runs on https://pwa-todo-app-local-storage.herokuapp.com/
+This app runs on https://pwa-to-do-app-8uafe00zv-fahricigdem.vercel.app/
 
 or
 
